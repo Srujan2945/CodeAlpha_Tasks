@@ -74,3 +74,5 @@ for stock, qty in portfolio.items():
 print("----------------------")
 print(f"💰 Total Investment Value: ₹{total_investment}")
 
+
+print("\n✅ Program completed. Thank you!")
