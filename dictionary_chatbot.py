@@ -5,10 +5,11 @@ responses = {
 }
 
 print("🤖 Dictionary Based Chatbot Started")
+print("Type 'bye' to exit\n")
 
-def chatbot_reply(user_input):
-    user_input = user_input.lower()
-    return responses.get(user_input, "Sorry, I don't understand that.")
+while True:
+    user_message = input("You: ")
+    print("Bot:", chatbot_reply(user_message))
 
-user_message = input("You: ")
-print("Bot:", chatbot_reply(user_message))
+    if user_message.lower() == "bye":
+        break
